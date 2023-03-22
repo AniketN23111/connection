@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Connection</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click To Login</string>
+    <string name="click_here_to_register">Click Here To Register</string>
+    <string name="logout">LogOut</string>
+    <string name="device_imei_in_android">Device IMEI in Android</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="longitude_will_be_here">Longitude will be here!</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude_will_be_here">Latitude will be here!</string>
+    <string name="latitude">Latitude:</string>
+    <string name="battery_percentage">Battery Percentage</string>
+    <string name="battery">Battery</string>
+    <string name="internet_status">Internet Status</string>
+    <string name="user_mail">User Mail</string>
+    <string name="get_data">Get Data</string>
+    <string name="camera">Camera</string>
+</resources>
