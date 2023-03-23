@@ -7,6 +7,10 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
 
     <TextView
         android:id="@+id/user_details"
@@ -80,6 +84,11 @@
     <Button
         android:id="@+id/get_data"
         android:text="@string/get_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/camera"
+        android:text="@string/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
