@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     String inter,battery_per,battery_pow,lan,logi,times,user_mail,number,image;
     ImageView imageView;
+    String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -170,6 +171,7 @@ catch (Exception e)
                 }
                 //IMEI
                 IMEI.setText("IMEI NUMBER:-"+imei);
+
                 handler.postDelayed(this,90000);
                 getValues();
 
@@ -228,7 +230,8 @@ catch (Exception e)
 Values values=new Values(inter,battery_per,battery_pow,lan,logi,times,user_mail,number,image);
 firebaseDatabase=FirebaseDatabase.getInstance();
 reference=firebaseDatabase.getReference("Values");
-reference.child("Value").setValue(values);
+id=reference.push().getKey();
+reference.child(id).setValue(values);
 
     }
 
@@ -335,6 +338,7 @@ reference.child("Value").setValue(values);
             connected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
             return connected;
         } catch (Exception e) {
+
             Log.e("Connectivity Exception", e.getMessage());
         }
         return connected;
