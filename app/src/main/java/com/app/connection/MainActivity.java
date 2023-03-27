@@ -117,6 +117,7 @@ catch (Exception e)
         }
         else {
             textView.setText(user.getEmail());
+            user_mail=user.getEmail();
         }
         logout_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -224,7 +225,6 @@ catch (Exception e)
         lan=latitudeTextView.getText().toString();
         logi=longitTextView.getText().toString();
         times=timeStamp.getText().toString();
-        user_mail=user.getEmail();
         number=imei;
         image=String.valueOf(uri);
 Values values=new Values(inter,battery_per,battery_pow,lan,logi,times,user_mail,number,image);
